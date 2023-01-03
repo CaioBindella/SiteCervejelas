@@ -1,0 +1,58 @@
+:root{
+    --purple: #895A95;
+    --yellow: #FBD168;
+    --brown: #6E4227;
+    --light-brown: #D9C1AF;
+  
+    --extra-small: 16px;
+    --small: 36px;
+    --medium: 56px;
+    --large: 76px;
+    --extra-large: 96px;
+  
+    --mobile: 390px;
+    --largeMobile: 500px;
+    --tablet: 820px;
+    --notebook: 1024px;
+    --largeNotebook: 1440px;
+    --desktop: 1920px;
+    --largeDesktop: 2560px;
+    --extraLargeDesktop: 3840px;
+  }
+  
+  @font-face {
+    font-family: 'Harler Mixgiter';
+    src: url('Assets/Fonts/Harler_Mixgiter.ttf');
+  }
+  
+  body{
+    margin: 0;
+    font-family: 'Harler Mixgiter', sans-serif;
+    font-size: var(--medium);
+  }
+
+  p{
+    margin: 0;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
