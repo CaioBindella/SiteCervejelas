@@ -10,4 +10,5 @@
   align-items: center;
   justify-content: start;
   flex-direction: column;
+  overflow: hidden;
 }
