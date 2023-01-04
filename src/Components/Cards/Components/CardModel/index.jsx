@@ -1,5 +1,3 @@
-import Card from "../Card/index";
-
 import objetivo from "../../Assets/Images/objetivo.svg"
 import copo from "../../Assets/Images/copo.svg"
 import trigo from "../../Assets/Images/trigo.svg"

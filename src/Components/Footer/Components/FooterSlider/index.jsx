@@ -11,6 +11,7 @@ import prefeituraIcon from '../../../../Assets/Images/Apoiadores/PMT_Turismo.svg
 import rotaCervejeiraIcon from '../../../../Assets/Images/Apoiadores/RotaCervejeira.svg'
 import senacIcon from '../../../../Assets/Images/Apoiadores/Senac.svg'
 import vmIcon from '../../../../Assets/Images/Apoiadores/VM.svg'
+import serraJr from '../../../../Assets/Images/Apoiadores/SerraJr.svg'
 
 import { LogoSlider, LogoSliderTrack } from "./style";
 
@@ -27,6 +28,7 @@ function FooterSlider() {
                     <FooterSliderImg image={rotaCervejeiraIcon} altText="RotaCervejeira" />
                     <FooterSliderImg image={senacIcon} altText="Senac" />
                     <FooterSliderImg image={vmIcon} altText="Vm" />
+                    <FooterSliderImg image={serraJr} altText="SerraJr" />
 
                     <FooterSliderImg image={acasatereIcon} altText="Acasatere" />
                     <FooterSliderImg image={beerGardenIcon} altText="BeerGarden" />
@@ -37,6 +39,7 @@ function FooterSlider() {
                     <FooterSliderImg image={rotaCervejeiraIcon} altText="RotaCervejeira" />
                     <FooterSliderImg image={senacIcon} altText="Senac" />
                     <FooterSliderImg image={vmIcon} altText="Vm" />
+                    <FooterSliderImg image={serraJr} altText="SerraJr" />
 
                     <FooterSliderImg image={acasatereIcon} altText="Acasatere" />
                     <FooterSliderImg image={beerGardenIcon} altText="BeerGarden" />
@@ -47,6 +50,7 @@ function FooterSlider() {
                     <FooterSliderImg image={rotaCervejeiraIcon} altText="RotaCervejeira" />
                     <FooterSliderImg image={senacIcon} altText="Senac" />
                     <FooterSliderImg image={vmIcon} altText="Vm" />
+                    <FooterSliderImg image={serraJr} altText="SerraJr" />
                     
                 </LogoSliderTrack>
             </LogoSlider>

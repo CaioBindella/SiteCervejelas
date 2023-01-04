@@ -6,8 +6,36 @@ export const StyledDiv = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 3%;
-`
 
+`;
+
+export const DivFirstCard = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3%;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    width: 80%;
+    margin-top: 2%;
+`;
+
+export const DivRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+`;
+
+export const DivColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+`;
 
 export const Container = styled.div`
     background-color: #fff;
@@ -49,6 +77,14 @@ export const Image = styled.img`
     margin-bottom: 20px;
 `;
 
+export const ImageSmaller = styled.img`
+    width: 150px;
+    height: 150px;
+
+    overflow: visible;
+    margin-bottom: 20px;
+`;
+
 export const Content = styled.div`
     display: flex;
     align-items: center;
@@ -73,11 +109,15 @@ export const TitleSmaller = styled.p`
 `;
 
 export const Text = styled.p`
-    text-align: center;
+    text-align: left;
     color: var(--brown);
-    font-size: var(--medium);
-    line-height: 0.5;
+    font-size: var(--small);
+    width: 80%;
+    background-color: #D9D9D9;
+    padding: 5%;
+    border-radius: 20px;
     margin: 3%;
+    font-family: 'Inter';
 `;
 
 export const GrayContainer = styled.div`
@@ -92,19 +132,28 @@ export const GrayContainer = styled.div`
     height: 30%;
     padding: 5px;
     margin-top: 5%;
+    font-family: 'Inter';
+    font-weight: 500;
 `;
 
 
 export const ImagePin = styled.img`
-    
+    width: 15%;
+    margin-left: 10%;
+    margin-right: 2%;
 `;
 
 
 export const TitleSmallerFisrtaCard = styled.p`
     color: #895A95;
     margin-left: 2%;
-    width: 100%;
-    line-height: 50%;
+    width: 80%;
+    text-align: left;
+    font-size: var(--extra-large);
+    line-height: 45%;
+    background-color: #D9D9D9;
+    
+    /* font-family: 'Inter'; */
 `;
 
 
@@ -112,9 +161,13 @@ export const TextFirstCard = styled.p`
     color: #895A95;
     margin-left: 2%;
     width: 100%;
-    line-height: 50%;
     margin-top: 5%;
     margin: 3%;
+    font-size: var(--medium);
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 

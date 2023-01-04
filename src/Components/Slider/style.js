@@ -11,6 +11,8 @@ export const Container = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 `;
 
 export const Wrapper = styled.div`
@@ -30,7 +32,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-    width: 80%;
+    width: 65%;
     height: 100%;
     background-color: #fff;
     display: flex;
@@ -44,7 +46,7 @@ export const Title = styled.p`
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: var(--purple);
-    width: 80%;
+    width: 65%;
     text-align: center;
     color: #fff;
     padding-top: 10px;
@@ -65,6 +67,13 @@ export const Logo = styled.img`
     } */
 `;
 
+export const Circle = styled.span`	
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FBD168;
+    margin: 50px;
+`;
 
 export const Text = styled.span`
     text-align: center;

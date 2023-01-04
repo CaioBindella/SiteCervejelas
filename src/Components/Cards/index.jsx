@@ -2,6 +2,7 @@ import objetivo from "../../Assets/Images/objetivo.svg"
 import copo from "../../Assets/Images/copo.svg"
 import trigo from "../../Assets/Images/trigo.svg"
 import trigoVerde from "../../Assets/Images/TrigoVerde.svg"
+import beerGardenLogo from "../../Assets/Images/beerGardenLogo.svg"
 import Pin from "../../Assets/Images/locationPin.svg"
 
 
@@ -21,6 +22,10 @@ import {
     TextFirstCard,
     LastContainer,
     Button,
+    DivFirstCard,
+    DivRow,
+    DivColumn,
+    ImageSmaller
 
 } from "./styles";
 
@@ -33,15 +38,23 @@ const Cards = () => {
                     <Image src={trigoVerde} alt="Trigo Verde image"></Image>
                 </FirstImageContainer>
                 <Content>
-                    <Title>NOSSO PONTO DE ENCONTRO É...</Title>
+                    <Title>NOSSO PONTO DE </Title>
+                    <TitleSmaller>ENCONTRO É...</TitleSmaller>
 
-                    <GrayContainer>
-                        <StyledDiv>
+                    <DivFirstCard>
+                        <DivRow>
                             <ImagePin src={Pin} alt="Location Pin Image"/>
-                            <TitleSmallerFisrtaCard>BEER GARDEN</TitleSmallerFisrtaCard>
-                        </StyledDiv>
-                        <TextFirstCard>RUA ALFREDO REBELO FILHO, 660</TextFirstCard>
-                    </GrayContainer>
+                            <DivColumn>
+                                <TitleSmallerFisrtaCard>BEER</TitleSmallerFisrtaCard>
+                                <TitleSmallerFisrtaCard>GARDEN</TitleSmallerFisrtaCard>
+                            </DivColumn>
+                        </DivRow>
+                        <DivRow>
+                            <TextFirstCard>RUA ALFREDO REBELO FILHO, 660</TextFirstCard>
+                        </DivRow>
+                    </DivFirstCard>
+                    
+                    <ImageSmaller src={beerGardenLogo}></ImageSmaller>
                 </Content>
             </Container>
 
@@ -54,19 +67,20 @@ const Cards = () => {
                     <Title>NOSSOS</Title>
                     <TitleSmaller>OBJETIVOS</TitleSmaller>
 
-                    <GrayContainer>
+                    {/* <GrayContainer> */}
                         <Text>Promever e valorizar a cultura cervejeitra realizada por mulheres da Região Serrana do Estado do Rio de Janeiro, ampliando a percepção do público sobre o consumo e produção da bebida independente do gênero.</Text>
-                    </GrayContainer>
+                    {/* </GrayContainer> */}
                 </Content>
             </Container>
 
+            {/* terceiro card */}
             <LastContainer>
                 <FirstImageContainer>
                     <Image src={copo} alt="Copo de Cerveja"></Image>
                 </FirstImageContainer>
                 <Content>
-                    <Title>ATIVIDADES & ATRAÇÕES</Title>
-
+                    <Title>ATIVIDADES &</Title>
+                    <TitleSmaller>ATRAÇÕES</TitleSmaller>
                     <GrayContainer>
                         <Button>DJ’s &</Button>
                         <Button>PALESTRAS &</Button>

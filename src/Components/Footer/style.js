@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const MarcaSerra = styled.div`
     background-color: #D9D9D9;
     border-radius: 10px;
-    padding: 0%;
+    padding: 0.2%;
     width: 25vw;
     display: flex;
     align-items: center;
