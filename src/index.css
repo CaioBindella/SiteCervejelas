@@ -57,3 +57,29 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+/* Show Default React Slick Arrow */
+.slick-prev {
+  left: 3% !important;
+  z-index: 100;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 100;
+}
+
+/* Alterando tamanho do Arrow React Slick */
+.slick-next:before, .slick-prev:before{
+  font-size: 36px;
+  line-height: 1;
+  opacity: .75;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.slick-list{
+  overflow: hidden;
+}

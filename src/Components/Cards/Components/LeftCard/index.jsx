@@ -15,12 +15,13 @@ import {
     TitleSmallerFisrtaCard,
     ImageSmaller,
     TextFirstCard,
-    ImagePin
+    ImagePin,
+    EdgeContainer
 } from "./style"
 
 const LeftCard = () => {
     return(
-        <Container>
+        <EdgeContainer>
             <FirstImageContainer>
                 <Image src={trigoVerde} alt="Trigo Verde image"></Image>
             </FirstImageContainer>
@@ -43,7 +44,7 @@ const LeftCard = () => {
             
                 <ImageSmaller src={beerGardenLogo}></ImageSmaller>
             </Content>
-        </Container>
+        </EdgeContainer>
     )
 }
 

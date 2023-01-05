@@ -6,7 +6,7 @@ export const LastContainer = styled.div`
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     margin: 20px;
-    margin-top: 40px;
+    margin-top: 15%;
 `;
 
 export const FirstImageContainer = styled.div`
@@ -81,17 +81,21 @@ export const GrayContainer = styled.div`
 
 export const Button = styled.button`
     color: var(--brown);
-    font-family: 'Harler Mixgiter';
-    /* width: 40%;
-    height: 3vh; */
+    font-family: 'Inter';
+    cursor: pointer;
     border: 1px solid;
     margin-top: 2%;
     border-radius: 10px;
     background-color: var(--white);
     color: var(--purple);
-    font-size: var(--small);
+    font-size: var(--extra-small);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &:hover{
+        transition: 0.2s;
         background-color: var(--purple);
         color: #fff;
         border: 1px solid purple;

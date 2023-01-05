@@ -5,6 +5,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
 `;
 
 export const MarcaSerra = styled.div`

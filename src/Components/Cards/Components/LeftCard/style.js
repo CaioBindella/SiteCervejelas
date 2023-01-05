@@ -10,6 +10,17 @@ export const Container = styled.div`
     
 `;
 
+export const EdgeContainer = styled.div`
+    background-color: #fff;
+    width: 25%;
+    height: 20%;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin: 20px;
+    margin-top: 15%;
+    
+`;
+
 export const FirstImageContainer = styled.div`
     background-color: #D9C1AF;
     border-top-left-radius: 40px;
@@ -41,7 +52,7 @@ export const ImageSmaller = styled.img`
 
 export const ImagePin = styled.img`
     width: 15%;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-right: 2%;
 `;
 
@@ -77,8 +88,9 @@ export const TitleSmallerFisrtaCard = styled.p`
     margin-left: 2%;
     width: 80%;
     text-align: left;
-    font-size: var(--extra-large);
-    line-height: 45%;
+    font-size: var(--small);
+    font-family: 'Inter';
+    line-height: 80%;
     background-color: #D9D9D9;
     
     /* font-family: 'Inter'; */
@@ -114,7 +126,7 @@ export const DivFirstCard = styled.div`
 export const DivRow = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
 `;

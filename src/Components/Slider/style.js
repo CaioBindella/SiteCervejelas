@@ -3,6 +3,7 @@ import { width } from "../../Services/config";
 
 export const SliderContainer = styled.div`
     width: 100%;
+    height: 40rem;
 `;
 
 export const Container = styled.div`
@@ -36,6 +37,7 @@ export const Content = styled.div`
     height: 100%;
     background-color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 40px;
@@ -51,12 +53,15 @@ export const Title = styled.p`
     color: #fff;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: var(--large);
 `;
 
 
 export const Logo = styled.img`
     width: 50%;
     height: 300px;
+    margin-left: 3%;
+    margin-bottom: 3%;
     /* @media screen and (max-width: ${width.tablet}) {    
         height: 15vh;
         border-radius: 20px;
@@ -68,20 +73,25 @@ export const Logo = styled.img`
 `;
 
 export const Circle = styled.span`	
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #FBD168;
-    margin: 50px;
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const Text = styled.span`
-    text-align: center;
+    text-align: left;
     color: var(--brown);
-    font-size: var(--medium);
-    line-height: 0.5;
+    font-size: var(--small);
     margin: 3%;
-    width: 50%;
+    width: 70%;
+    margin-top: 1%;
+    font-family: 'Inter';
     /* @media screen and (max-width: ${width.largeMobile}) {
         width: 85%;
         font-size: 1rem;
@@ -105,4 +115,12 @@ export const Text = styled.span`
         height: 20vh;
     } */
     
+`;
+
+export const DivRow = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
 `;

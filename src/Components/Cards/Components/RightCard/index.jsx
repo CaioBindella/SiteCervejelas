@@ -1,4 +1,9 @@
 import copo from "../../../../Assets/Images/copo.svg"
+import { useState } from "react"
+import Modal from "../Modal"
+
+import { popUpData } from '../../../../Services/popUp'
+
 
 import {
     LastContainer,
@@ -8,10 +13,19 @@ import {
     Title,
     TitleSmaller,
     GrayContainer,
-    Button
+    Button,
 } from "./style"
 
 const RightCard = () => {
+
+    const [statusModal, setStatusModal] = useState(false)
+    const [modalData, setModalData] = useState()
+
+    const openModal = (data) => {
+        setStatusModal(!statusModal)
+        setModalData(data)
+    }
+
     return(
         <LastContainer>
             <FirstImageContainer>
@@ -21,13 +35,16 @@ const RightCard = () => {
                 <Title>ATIVIDADES &</Title>
                 <TitleSmaller>ATRAÇÕES</TitleSmaller>
                 <GrayContainer>
-                    <Button>DJ’s &</Button>
-                    <Button>PALESTRAS &</Button>
-                    <Button>ARTISTAS VISUAIS &</Button>
-                    <Button>LIVE PAINTING &</Button>
-                    <Button>TATUAGEM &</Button>
-                    <Button>WORKSHOPS &</Button>
-                    <Button>ESPAÇO KIDS.</Button>
+                    <Button onClick={() => openModal(popUpData.dj)}>DJ’s &</Button>
+                    <Button onClick={() => openModal(popUpData.palestras)}>PALESTRAS &</Button>
+                    <Button onClick={() => openModal(popUpData.artistasVisuais)}>ARTISTAS VISUAIS &</Button>
+                    <Button onClick={() => openModal(popUpData.livePainting)}>LIVE PAINTING &</Button>
+                    <Button onClick={() => openModal(popUpData.tatto)}>TATUAGEM &</Button>
+                    <Button onClick={() => openModal(popUpData.workshops)}>WORKSHOPS &</Button>
+                    <Button onClick={() => openModal(popUpData.espacoKids)}>ESPAÇO KIDS.</Button>
+                    <Button onClick={() => openModal(popUpData.conhecaEspaco)}>CONHEÇA O ESPAÇO</Button>
+
+                    <Modal data={modalData} status={statusModal} setStatus={setStatusModal}/>
                 </GrayContainer>
             </Content>
         </LastContainer>

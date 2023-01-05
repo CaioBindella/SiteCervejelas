@@ -13,7 +13,8 @@ import {
     SliderContainer,
     Title,
     Text,
-    Circle
+    Circle,
+    DivRow
 } from "./style"
 
 
@@ -37,9 +38,11 @@ const Carousel = () => {
                             <Wrapper>
                                 <Title>História</Title>
                                 <Content>
-                                    <Logo src={item.image} alt={item.text}/>
                                     <Circle>{item.circle}</Circle>
-                                    <Text>{item.text}</Text>
+                                    <DivRow>
+                                        <Logo src={item.image} alt={item.text}/>
+                                        <Text>{item.text}</Text>
+                                    </DivRow>
                                 </Content>
                             </Wrapper>
                         </Container>
