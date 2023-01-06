@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import ReactModal from 'react-modal'
 import { 
-    ModalLine, 
-    ModalContainer,
-    ModalTitle, 
-    ModalCrossButton, 
-    ModalH2, 
-    ModalHeader, 
+    Container,
+    Title, 
+    Close, 
+    Header,
+    Content,
+    Image,
+    Attraction,
+    Contact,
 } from './style';
 
 
@@ -23,13 +25,17 @@ const Modal = ({status, setStatus, data}) =>{
           marginRight: '-50%',
           transform: 'translate(-50%, -50%)',
           width: '30vw',
-          height: '40vh',
+          height: '50vh',
           color: '#001830',
           paddingTop: 0,
+          backgroundColor: 'transparent',
+          borderRadius: 70,
+          border: 0,
+          padding: 0,
         },
 
         overlay: {
-            backgroundColor: '#00000028',
+            backgroundColor: '#0000003c',
         }
       };
 
@@ -41,18 +47,24 @@ const Modal = ({status, setStatus, data}) =>{
                 contentLabel="Example Modal"
                 style={customStyles}
             >
-                <ModalContainer>
-                    <ModalHeader>
-                        <ModalTitle>    
-                            <h1>{data.name}</h1>
-                            <ModalCrossButton onClick={() => setStatus(false)}>X</ModalCrossButton>
-                        </ModalTitle>
-
-                        <ModalLine />
-                    </ModalHeader>
+                <Container>
+                    <Header>   
+                        <Title>{data.activity}</Title>
+                        <Close onClick={() => setStatus(false)}>X</Close>
+                    </Header>
                     
-                    <ModalH2>Resumo do projeto</ModalH2>
-                </ModalContainer>
+                    <Content>
+                        {data.attractions.map((eachData, key) => {
+                            return(
+                                <Attraction>
+                                    <Image key={key} src={eachData.image} alt={eachData.name} />
+                                    <Contact>{eachData.contact}</Contact>
+                                </Attraction>
+                            )
+                        })}
+                        
+                    </Content>
+                </Container>
             </ReactModal>
         )
     }

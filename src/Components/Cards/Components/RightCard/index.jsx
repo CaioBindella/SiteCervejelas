@@ -35,14 +35,11 @@ const RightCard = () => {
                 <Title>ATIVIDADES &</Title>
                 <TitleSmaller>ATRAÇÕES</TitleSmaller>
                 <GrayContainer>
-                    <Button onClick={() => openModal(popUpData.dj)}>DJ’s &</Button>
+                    <Button onClick={() => openModal(popUpData.cervejeiras)}>CERVEJEIRAS &</Button>
                     <Button onClick={() => openModal(popUpData.palestras)}>PALESTRAS &</Button>
-                    <Button onClick={() => openModal(popUpData.artistasVisuais)}>ARTISTAS VISUAIS &</Button>
                     <Button onClick={() => openModal(popUpData.livePainting)}>LIVE PAINTING &</Button>
                     <Button onClick={() => openModal(popUpData.tatto)}>TATUAGEM &</Button>
-                    <Button onClick={() => openModal(popUpData.workshops)}>WORKSHOPS &</Button>
-                    <Button onClick={() => openModal(popUpData.espacoKids)}>ESPAÇO KIDS.</Button>
-                    <Button onClick={() => openModal(popUpData.conhecaEspaco)}>CONHEÇA O ESPAÇO</Button>
+                    <Button onClick={() => openModal(popUpData.atracoes)}>ATRAÇÕES</Button>
 
                     <Modal data={modalData} status={statusModal} setStatus={setStatusModal}/>
                 </GrayContainer>

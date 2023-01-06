@@ -1,54 +1,49 @@
 import styled from "styled-components";
 import { width } from "../../../../Services/config";
 
-export const ModalContainer = styled.div`
+export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    @media screen and (min-width: ${width.largeDesktop}){
-        font-size: 30px;
-    }
-    @media screen and (min-width: ${width.extraLargeDesktop}){
-        font-size: 40px;
-    }
     /* overflow: 'scroll', */
 `;
 
-export const ModalHeader = styled.div`
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    width: 100%;
-    z-index: 3;
-`;
-
-export const ModalTitle = styled.div`
+export const Header = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: ${width.largeMobile}){
-        font-size: 12px;
-    }
+    background-color: #D9C1AF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 80px;
+    position: sticky;
+    top: 0;
 `;
 
-export const ModalH2 = styled.h2`
+export const Title = styled.h1`
+    width: 90%;
+    font-size: var(--medium);
+    text-align: center;
+    color: var(--brown);
 `;
 
-export const ModalCrossButton = styled.button`
+export const Close = styled.button`
     background-color: #fff;
-    border: 1px solid #FF7400;
-    font-size: 1.5em;
+    border: 1px solid var(--brown);
+    font-size: 20px;
     width: 40px;
     height: 40px;
-    border-radius: 20px;
-    color: #FF7400;
+    margin-right: 20px;
+    border-radius: 50px;
+    color: var(--brown);
+    background-color: var(--light-brown);
     &:hover{
         border: 1px solid #fff;
-        background-color: red;
+        background-color: #E54746;
         transition: 0.3s;
         color: #fff;
         cursor: pointer;
     }
-    @media screen and (max-width: ${width.largeMobile}){
+    /* @media screen and (max-width: ${width.largeMobile}){
         width: 30px;
         height: 30px;
         border-radius: 15px;
@@ -62,12 +57,40 @@ export const ModalCrossButton = styled.button`
         width: 80px;
         height: 80px;
         border-radius: 40px;
-    }
+    } */
 `;
 
-export const ModalLine = styled.hr`
-    background: linear-gradient(90deg, rgba(4,173,215,1) 0%, rgba(4,173,215,1) 41%, rgba(255,116,0,1) 69%);
-    height: 2px;
-    width: 100%;
-    border: 0;
+export const Content = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    /* background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-backdrop-filter: blur( 3.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+`;
+
+export const Attraction = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`;
+
+export const Image = styled.img`
+    width: 15vw;
+`;
+
+export const Contact = styled.div`
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: var(--small);
 `;

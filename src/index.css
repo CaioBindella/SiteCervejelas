@@ -6,7 +6,7 @@
     --white: #fff;
   
     --extra-small: 16px;
-    --small: 36px;
+    --small: 24px;
     --medium: 56px;
     --large: 76px;
     --extra-large: 96px;
@@ -36,7 +36,7 @@
     margin: 0;
   }
 
-  /* width */
+/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }

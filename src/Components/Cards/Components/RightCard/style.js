@@ -86,8 +86,8 @@ export const Button = styled.button`
     border: 1px solid;
     margin-top: 2%;
     border-radius: 10px;
-    background-color: var(--white);
-    color: var(--purple);
+    background-color: #FFF;
+    color: var(--brown);
     font-size: var(--extra-small);
     padding-top: 5px;
     padding-bottom: 5px;
@@ -96,8 +96,8 @@ export const Button = styled.button`
 
     &:hover{
         transition: 0.2s;
-        background-color: var(--purple);
+        background-color: var(--brown);
         color: #fff;
-        border: 1px solid purple;
+        border: 1px solid #6E4227;
     }
 `;

@@ -1,43 +1,70 @@
+import acasatereIcon from '../Assets/Images/Apoiadores/Acasatere.svg'
+import favreBaumIcon from '../Assets/Images/Apoiadores/favrebraum.svg'
+// import beerGardenIcon from '../Assets/Images/Apoiadores/BeerGarden.svg'
+// import estiloBeerIcon from '../Assets/Images/Apoiadores/EstiloBeerTour.svg'
+// import evoresIcon from '../Assets/Images/Apoiadores/Evores.svg'
+
+
+
 export const popUpData = {
-    dj:{
-        image: 'sadas',
-        name: 'saldjksaldj',
-        contact: 'sadsadsad'
-    },
     palestras:{
-        image: 'sadas',
-        name: 'saldjksaldj',
-        contact: 'sadsadsad'
+        activity: "Palestras",
+        attractions: [
+            {
+                image: acasatereIcon,
+                name: "A Casa Terê",
+                contact: ''
+            },
+            {
+                image: acasatereIcon,
+                name: "A Casa Terê",
+                contact: ''
+            },
+            {
+                image: acasatereIcon,
+                name: "A Casa Terê",
+                contact: ''
+            },
+        ]
     },
-    artistasVisuais:{
-        image: 'sadas',
-        name: 'saldjksaldj',
-        contact: 'sadsadsad'
+    cervejeiras:{
+        activity: "Cervejeiras",
+        attractions: [
+            {
+                image: acasatereIcon,
+                name: "A Casa Terê",
+                contact: ''
+            },
+        ]
     },
     livePainting:{
-        image: 'sadas',
-        name: 'saldjksaldj',
-        contact: 'sadsadsad'
+        activity: "Live Painting",
+        attractions: [
+            {
+                image: acasatereIcon,
+                name: "A Casa Terê",
+                contact: '@sadas'
+            },
+        ]
     },
-    tatto: {
-        image: 'sadas',
-        name: 'saldjksaldj',
-        contact: 'sadsadsad'
+    tatto:{
+        activity: "Tatuagem",
+        attractions: [
+            {
+                image: acasatereIcon,
+                name: "A Casa Terê",
+                contact: '@sadas'
+            },
+        ]
     },
-    workshops:{
-        image: 'sadas',
-        name: 'saldjksaldj',
-        contact: 'sadsadsad'
-    },
-    espacoKids:{
-        image: 'sadas',
-        name: 'saldjksaldj',
-        contact: 'sadsadsad'
-    },
-    conhecaEspaco:{
-        image: 'sadas',
-        name: 'saldjksaldj',
-        contact: 'sadsadsad'
-    },
-    
+    atracoes:{
+        activity: "Atrações",
+        attractions: [
+            {
+                image: acasatereIcon,
+                name: "A Casa Terê",
+                contact: '@sadas'
+            },
+        ]
+    }, 
 }

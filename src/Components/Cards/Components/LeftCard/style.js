@@ -138,3 +138,36 @@ export const DivColumn = styled.div`
     align-items: center;
     width: 50%;
 `;
+
+export const Button = styled.a`
+    font-family: 'Inter';
+    cursor: pointer;
+    border: 1px solid;
+    margin-top: 2%;
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--purple);   
+    font-size: var(--extra-small);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+
+    &:hover{
+        transition: 0.2s;
+        background-color: var(--purple);
+        color: #fff;
+        border: 1px solid purple;
+    }
+`;
+
+
+
+export const DivColumnDown = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+`;

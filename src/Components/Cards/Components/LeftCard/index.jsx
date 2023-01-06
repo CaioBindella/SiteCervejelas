@@ -16,10 +16,14 @@ import {
     ImageSmaller,
     TextFirstCard,
     ImagePin,
-    EdgeContainer
+    EdgeContainer,
+    Button,
+    DivColumnDown
+
 } from "./style"
 
-const LeftCard = () => {
+const LeftCard = () => { 
+    
     return(
         <EdgeContainer>
             <FirstImageContainer>
@@ -37,12 +41,14 @@ const LeftCard = () => {
                             <TitleSmallerFisrtaCard>GARDEN</TitleSmallerFisrtaCard>
                         </DivColumn>
                     </DivRow>
-                    <DivRow>
+                    <DivColumnDown>
                         <TextFirstCard>RUA ALFREDO REBELO FILHO, 660</TextFirstCard>
-                    </DivRow>
+                        <Button target={"_blank"} href="https://www.instagram.com/p/Cet6147Fwjv/">CONHEÇA O ESPAÇO</Button>
+                    </DivColumnDown>
                 </DivFirstCard>
             
                 <ImageSmaller src={beerGardenLogo}></ImageSmaller>
+
             </Content>
         </EdgeContainer>
     )
