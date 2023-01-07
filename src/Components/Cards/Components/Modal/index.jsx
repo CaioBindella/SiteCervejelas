@@ -25,13 +25,12 @@ const Modal = ({status, setStatus, data}) =>{
           marginRight: '-50%',
           transform: 'translate(-50%, -50%)',
           width: '30vw',
-          height: '50vh',
-          color: '#001830',
-          paddingTop: 0,
+          height: '60vh',
           backgroundColor: 'transparent',
-          borderRadius: 70,
+          borderRadius: 66,
           border: 0,
           padding: 0,
+          scrollBehavior: 'smooth',
         },
 
         overlay: {
@@ -46,6 +45,7 @@ const Modal = ({status, setStatus, data}) =>{
                 onRequestClose={() => setStatus(false)}
                 contentLabel="Example Modal"
                 style={customStyles}
+                preventScroll={true}
             >
                 <Container>
                     <Header>   

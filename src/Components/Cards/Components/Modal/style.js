@@ -4,7 +4,6 @@ import { width } from "../../../../Services/config";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    /* overflow: 'scroll', */
 `;
 
 export const Header = styled.div`
@@ -66,6 +65,7 @@ export const Content = styled.div`
     justify-content: center;
     flex-direction: column;
     background-color: var(--white);
+    
     
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
