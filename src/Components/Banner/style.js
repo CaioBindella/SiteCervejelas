@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { width } from '../../Services/config'
 
 
 export const Container = styled.div`
@@ -29,6 +30,17 @@ export const Logo = styled.img`
     height: 6%;
     /* margin-top: -1%;
     margin-bottom: -2%;  */
+
+    @media screen and (max-width: ${width.mobile}){
+        width: 90px;
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
+        width: 90px;
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        width: 90px;
+    }
+
 `;
 
 export const LowHeader = styled.div`
@@ -37,15 +49,54 @@ export const LowHeader = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 2%;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        flex-direction: row;
+    }
+
 `;
 
 export const LineIcon = styled.img`
     width: 400px;
     height: 400px;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        width: 300px;
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
+        width: 300px;
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        width: 300px;
+    }
+
 `;
 
 export const BeerIcon = styled.img`
     width: 500px;
     height: 500px;
     margin-left: 6%;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        width: 200px;
+        margin-top: -200px;
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
+        width: 300px;
+        margin-top: -140px;
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        width: 300px;
+        margin-top: 0px;
+    }
+
+
 `;

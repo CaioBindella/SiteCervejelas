@@ -3,12 +3,10 @@ import Pin from "../../../../Assets/Images/locationPin.svg"
 import beerGardenLogo from "../../../../Assets/Images/beerGardenLogo.svg"
 
 import { 
-    Container,
     FirstImageContainer,
     Image,
     Content,
     Title,
-    TitleSmaller,
     DivFirstCard,
     DivRow,
     DivColumn,
@@ -31,7 +29,7 @@ const LeftCard = () => {
             </FirstImageContainer>
             <Content>
                 <Title>NOSSO PONTO DE </Title>
-                <TitleSmaller>ENCONTRO É...</TitleSmaller>
+                <Title>ENCONTRO É...</Title>
 
                 <DivFirstCard>
                     <DivRow>

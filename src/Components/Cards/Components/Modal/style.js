@@ -4,6 +4,7 @@ import { width } from "../../../../Services/config";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
+
 `;
 
 export const Header = styled.div`
@@ -69,14 +70,6 @@ export const Content = styled.div`
     
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-
-    /* background: rgba( 255, 255, 255, 0.3 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 3.5px );
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    -webkit-backdrop-filter: blur( 3.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 `;
 
 export const Attraction = styled.div`
@@ -88,9 +81,14 @@ export const Attraction = styled.div`
 
 export const Image = styled.img`
     width: 15vw;
+
+    @media screen and (max-width: ${width.largeMobile}) {    
+        width: 40vw;
+    }
 `;
 
 export const Contact = styled.div`
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: var(--small);
+    color: #000;
 `;

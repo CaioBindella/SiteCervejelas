@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { width } from "../../Services/config";
 
 export const Container = styled.div`
     display: flex;
@@ -6,6 +7,19 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 10%;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        margin-top: 0px;
+    }
+
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) { 
+        margin-top: 0px;
+    }
+
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {
+        margin-top: 3%;    
+    }
+
 `;
 
 export const MarcaSerra = styled.div`
@@ -18,5 +32,21 @@ export const MarcaSerra = styled.div`
     justify-content: center;
     margin-bottom: 10px;
     margin-top: 10px;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        width: 60vw;
+        font-size: 1.8rem; 
+    }
+
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) { 
+        width: 60vw;
+        font-size: 1.8rem;  
+  
+    }
+    
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {
+        width: 30vw;
+        font-size: 2.8rem;    
+    }
 
 `;

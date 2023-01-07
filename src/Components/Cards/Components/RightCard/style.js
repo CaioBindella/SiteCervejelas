@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { width } from "../../../../Services/config";
 
 export const LastContainer = styled.div`
     background-color: #fff;
@@ -7,6 +8,19 @@ export const LastContainer = styled.div`
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     margin: 20px;
     margin-top: 15%;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        width: 80vw;
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
+        width: 80vw;
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        width: 85vw;
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.desktop}) {    
+        width: 25%;
+    }
 `;
 
 export const FirstImageContainer = styled.div`
@@ -42,6 +56,13 @@ export const Title = styled.p`
     color: var(--brown);
     font-size: var(--extra-large);
     line-height: 0.5;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        font-size: var(--large);
+    }
+    @media screen and (min-width: ${width.largeMobile}) {    
+        font-size: var(--large);
+    }
 `;
 
 export const TitleSmaller = styled.p`
@@ -49,6 +70,10 @@ export const TitleSmaller = styled.p`
     color: var(--brown);
     font-size: var(--large);
     line-height: 0.5;
+
+    @media screen and (min-width: ${width.largeMobile}) {    
+        font-size: var(--medium);
+    }
 `;
 
 export const Text = styled.p`
@@ -83,7 +108,7 @@ export const Button = styled.button`
     color: var(--brown);
     font-family: 'Inter';
     cursor: pointer;
-    border: 1px solid;
+    border: 1.5px solid;
     margin-top: 2%;
     border-radius: 10px;
     background-color: #FFF;

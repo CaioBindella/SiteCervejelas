@@ -12,3 +12,52 @@
   flex-direction: column;
   overflow: hidden;
 }
+
+/* modal styles */
+
+.Modal{
+  /* default styles */
+  position: absolute;
+  background: #fff;
+  overflow: auto;
+  outline: none;
+
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 60vh;
+  background-color: transparent;
+  border-radius: 66px;
+  border: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.Overlay{
+  /* default styles */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #0000003c;
+}
+
+@media (max-width: 390px){
+  .Modal{
+    width: 80vw;
+    height: 60vh;
+  }
+}
+
+@media (min-width: 391px) and (max-width: 820px){
+  .Modal{
+    width: 60vw;
+    height: 60vh;
+  }
+}

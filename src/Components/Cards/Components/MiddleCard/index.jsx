@@ -6,7 +6,6 @@ import {
     Image,
     Content,
     Title,
-    TitleSmaller,
     Text
 } from "./style"
 
@@ -18,7 +17,7 @@ const MiddleCard = () => {
             </ImageContainer>
                 <Content>
                     <Title>NOSSOS</Title>
-                    <TitleSmaller>OBJETIVOS</TitleSmaller>
+                    <Title>OBJETIVOS</Title>
                     
                     <Text>Promever e valorizar a cultura cervejeitra realizada por mulheres da Região Serrana do Estado do Rio de Janeiro, ampliando a percepção do público sobre o consumo e produção da bebida independente do gênero.</Text>
                 </Content>

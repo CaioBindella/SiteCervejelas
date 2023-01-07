@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { width } from "../../../../Services/config";
 
 export const Container = styled.div`
     background-color: #fff;
@@ -8,6 +9,23 @@ export const Container = styled.div`
     margin: 20px;
     margin-top: 5%;
     height: 20%;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        width: 80vw;
+        margin-top: 10%;
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
+        width: 80vw;
+        margin-top: 10%;
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        width: 85vw;
+        margin-top: 10%;
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.desktop}) {    
+        width: 25%;
+        height: 20%;
+    }
 `;
 
 export const ImageContainer = styled.div`
@@ -27,6 +45,7 @@ export const Image = styled.img`
 
     overflow: visible;
     margin-bottom: 20px;
+
 `;
 
 export const Content = styled.div`
@@ -43,13 +62,13 @@ export const Title = styled.p`
     color: var(--brown);
     font-size: var(--extra-large);
     line-height: 0.5;
-`;
 
-export const TitleSmaller = styled.p`
-    text-align: center;
-    color: var(--brown);
-    font-size: var(--large);
-    line-height: 0.5;
+    @media screen and (max-width: ${width.mobile}) {    
+        font-size: var(--large);
+    }
+    @media screen and (min-width: ${width.largeMobile}) {    
+        font-size: var(--large);
+    }
 `;
 
 export const Text = styled.p`
@@ -62,5 +81,17 @@ export const Text = styled.p`
     border-radius: 20px;
     margin: 3%;
     font-family: 'Inter';
+
+    @media screen and (max-width: ${width.mobile}) {    
+        width: 80%;
+        text-align: center;
+        font-size: var(--small);
+    }
+
+    @media screen and (min-width: ${width.largeMobile}) {    
+        width: 80%;
+        text-align: center;
+        font-size: var(--small);
+    }
 `;
 

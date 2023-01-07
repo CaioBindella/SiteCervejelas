@@ -16,36 +16,15 @@ ReactModal.setAppElement('#root');
 
 const Modal = ({status, setStatus, data}) =>{
 
-    const customStyles = {
-        content: {
-          top: '50%',
-          left: '50%',
-          right: 'auto',
-          bottom: 'auto',
-          marginRight: '-50%',
-          transform: 'translate(-50%, -50%)',
-          width: '30vw',
-          height: '60vh',
-          backgroundColor: 'transparent',
-          borderRadius: 66,
-          border: 0,
-          padding: 0,
-          scrollBehavior: 'smooth',
-        },
-
-        overlay: {
-            backgroundColor: '#0000003c',
-        }
-      };
-
     if(data){
         return(
             <ReactModal
                 isOpen={status}
                 onRequestClose={() => setStatus(false)}
                 contentLabel="Example Modal"
-                style={customStyles}
                 preventScroll={true}
+                className="Modal"
+                overlayClassName="Overlay"
             >
                 <Container>
                     <Header>   

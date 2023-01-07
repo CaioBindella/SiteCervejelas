@@ -1,14 +1,5 @@
 import styled from "styled-components"
-
-export const Container = styled.div`
-    background-color: #fff;
-    width: 25%;
-    border-radius: 40px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    margin: 20px;
-    margin-top: 40px;
-    
-`;
+import { width } from "../../../../Services/config";
 
 export const EdgeContainer = styled.div`
     background-color: #fff;
@@ -18,6 +9,20 @@ export const EdgeContainer = styled.div`
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     margin: 20px;
     margin-top: 15%;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        width: 80%;
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {   
+        width: 80%;
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        width: 90%;
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.desktop}) {    
+        width: 25%;
+        height: 20%;
+    }
     
 `;
 
@@ -74,13 +79,17 @@ export const Title = styled.p`
     color: var(--brown);
     font-size: var(--extra-large);
     line-height: 0.5;
-`;
 
-export const TitleSmaller = styled.p`
-    text-align: center;
-    color: var(--brown);
-    font-size: var(--large);
-    line-height: 0.5;
+    @media screen and (max-width: ${width.mobile}) {    
+        font-size: var(--large);
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {   
+        font-size: var(--large);
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        font-size: var(--large);
+        margin-top: 0px;
+    }
 `;
 
 export const TitleSmallerFisrtaCard = styled.p`
@@ -142,7 +151,7 @@ export const DivColumn = styled.div`
 export const Button = styled.a`
     font-family: 'Inter';
     cursor: pointer;
-    border: 1px solid;
+    border: 2px solid;
     margin-top: 2%;
     border-radius: 10px;
     background-color: var(--white);
