@@ -8,8 +8,18 @@ export const LogoSlider = styled.div`
 	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
 	overflow: hidden;
 	position: relative;
-	width: 100%;
+	width: 100vw;
     height: 21vh;
+
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    -webkit-backdrop-filter: blur( 3.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    background-color: transparent;
     @media screen and (max-width: ${width.largeDesktop}){
         height: 16%;
     }

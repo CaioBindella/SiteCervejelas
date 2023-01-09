@@ -19,7 +19,7 @@ export const LastContainer = styled.div`
         width: 85vw;
     }
     @media screen and (min-width: ${width.notebook}) and (max-width: ${width.desktop}) {    
-        width: 25%;
+        width: 27%;
     }
 `;
 
@@ -39,7 +39,17 @@ export const Image = styled.img`
     height: 220px;
 
     overflow: visible;
+    margin-top: 40px;
     margin-bottom: 20px;
+`;
+
+export const MinorImage = styled.img`
+    width: 120px;
+    height: 120px;
+
+    overflow: visible;
+    margin-top: 7%;
+    margin-bottom: 5%;
 `;
 
 export const Content = styled.div`
@@ -60,19 +70,16 @@ export const Title = styled.p`
     @media screen and (max-width: ${width.mobile}) {    
         font-size: var(--large);
     }
-    @media screen and (min-width: ${width.largeMobile}) {    
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {   
         font-size: var(--large);
     }
-`;
-
-export const TitleSmaller = styled.p`
-    text-align: center;
-    color: var(--brown);
-    font-size: var(--large);
-    line-height: 0.5;
-
-    @media screen and (min-width: ${width.largeMobile}) {    
-        font-size: var(--medium);
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        font-size: var(--large);
+        margin-top: 0px;
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {    
+        font-size: var(--large);
+        margin-top: 0px;
     }
 `;
 
@@ -98,7 +105,7 @@ export const GrayContainer = styled.div`
     text-align: center;
     width: 80%;
     height: 30%;
-    padding: 5px;
+    padding: 15px;
     margin-top: 5%;
     font-family: 'Inter';
     font-weight: 500;

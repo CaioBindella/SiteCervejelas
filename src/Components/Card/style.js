@@ -20,6 +20,15 @@ export const Container = styled.div`
     @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
         width: 85%;
     }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {  
+        width: 80%;
+    }
+    @media screen and (min-width: ${width.largeNotebook}) and (max-width: ${width.desktop}) {  
+        width: 70%;
+    }
+    @media screen and (min-width: ${width.largeDesktop}) and (max-width: ${width.extraLargeDesktop}) {  
+        width: 45%;
+    }
     
 `;
 

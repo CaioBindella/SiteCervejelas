@@ -2,7 +2,7 @@
   "name": "cervejelas2023",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://serrajrengenharia.github.io/siteCervejelas",
+  "homepage": "https://serra-jr-engenharia.github.io/Cervejelas2023",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

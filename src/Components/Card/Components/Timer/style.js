@@ -22,6 +22,12 @@ export const Container = styled.div`
     @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
         width: 80%;
     }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {  
+        width: 80%;
+    }
+    @media screen and (min-width: ${width.largeNotebook}) and (max-width: ${width.desktop}) {  
+        width: 70%;
+    }
 `;
 
 export const TimeContainer = styled.div`
@@ -67,6 +73,9 @@ export const TextSmall = styled.p`
         font-size: var(--extra-small);
     }
     @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        font-size: var(--medium);
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {  
         font-size: var(--medium);
     }
 `

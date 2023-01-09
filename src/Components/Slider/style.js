@@ -10,12 +10,20 @@ export const SliderContainer = styled.div`
     }
 
     @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {   
-        height: 97vh; 
-        margin-bottom: 10%;  
+        height: 100vh;  
     }
     @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {   
         height: 57vh; 
         margin-bottom: 5%;   
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {    
+        height: 100vh;
+    }
+    @media screen and (min-width: ${width.desktop}) and (max-width: ${width.largeDesktop}) {    
+        height: 95vh;
+    }
+    @media screen and (min-width: ${width.largeDesktop}) and (max-width: ${width.extraLargeDesktop}) {    
+        width: 90%;
     }
 `;
 
@@ -31,15 +39,19 @@ export const Container = styled.div`
     @media screen and (max-width: ${width.mobile}) {    
         height: 83vh;   
     }
-
     @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {   
-        height: 97vh; 
+        height: 80vh; 
          
     }
-
     @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {   
         height: 57vh; 
            
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {    
+        height: 84vh;
+    }
+    @media screen and (min-width: ${width.desktop}) and (max-width: ${width.largeDesktop}) {    
+        height: 80vh;
     }
     
 
@@ -176,46 +188,15 @@ export const Text = styled.span`
     }
     @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {   
         width: 85%;
-        font-size: 1rem;  
-    }
-
-    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
-        width: 85%;
-        font-size: var(--small);
-        height: 10vh;
-    }
-    /* @media screen and (max-width: ${width.largeMobile}) {
-        
-    }
-    @media screen and (min-width: ${width.tablet}) {
-        width: 85%;
         font-size: 1rem;
-        height: 20vh;
     }
-    @media screen and (min-width: ${width.notebook}) {
-        height: 23vh;
-        
-    }
-    @media screen and (min-width: ${width.largeDesktop}) {
-        font-size: 2.0rem;
-        height: 20vh;
-    }
-    @media screen and (min-width: ${width.extraLargeDesktop}) {
-        font-size: 3.0rem;
-        height: 20vh;
-    } */
-    
-    @media screen and (max-width: ${width.largeMobile}) {    
-        margin-bottom: 10%;
-        font-size: var(--extra-small);
-        text-align: justify;
-        width: 80%;
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {   
+        font-size: 1.5rem; 
     }
 
-    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}){
-        text-align: justify;
-        width: 80%;
-        margin-bottom: 10%;
+    @media screen and (min-width: ${width.desktop}) and (max-width: ${width.largeDesktop}) {    
+        width: 85%;
+        font-size: 40px;
     }
 
 `;

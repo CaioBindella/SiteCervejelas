@@ -20,7 +20,7 @@ export const EdgeContainer = styled.div`
         width: 90%;
     }
     @media screen and (min-width: ${width.notebook}) and (max-width: ${width.desktop}) {    
-        width: 25%;
+        width: 27%;
         height: 20%;
     }
     
@@ -87,6 +87,10 @@ export const Title = styled.p`
         font-size: var(--large);
     }
     @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        font-size: var(--large);
+        margin-top: 0px;
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {    
         font-size: var(--large);
         margin-top: 0px;
     }

@@ -11,12 +11,12 @@ export const width = {
     // @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
     // 
     // }
-    notebook: '1024px',
-    // @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+    notebook: '1023px',
+    // @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {    
     // 
     // }
     largeNotebook: '1440px',
-    // @media screen and (min-width: ${width.notebook}) and (max-width: ${width.desktop}) {    
+    // @media screen and (min-width: ${width.largeNotebook}) and (max-width: ${width.desktop}) {    
     // 
     // }
     desktop: '1920px',

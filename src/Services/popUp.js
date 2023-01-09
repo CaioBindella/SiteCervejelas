@@ -11,19 +11,24 @@ export const popUpData = {
         activity: "Palestras",
         attractions: [
             {
-                image: acasatereIcon,
-                name: "A Casa Terê",
-                contact: ''
+                image: '',
+                name: "Ana Pampillon",
+                contact: '@anapampillon'
             },
             {
-                image: acasatereIcon,
-                name: "A Casa Terê",
-                contact: ''
+                image: '',
+                name: "Isa Tebaldi",
+                contact: '@isatebaldii'
             },
             {
-                image: acasatereIcon,
-                name: "A Casa Terê",
-                contact: ''
+                image: '',
+                name: "Teresa Yoshiko",
+                contact: '@tyozassa'
+            },
+            {
+                image: '',
+                name: "Marceli Fonseca",
+                contact: '@marcelifonseca'
             },
         ]
     },
@@ -31,9 +36,24 @@ export const popUpData = {
         activity: "Cervejeiras",
         attractions: [
             {
-                image: acasatereIcon,
-                name: "A Casa Terê",
-                contact: ''
+                image: '',
+                name: "Favre Baum",
+                contact: '@favrebaum'
+            },
+            {
+                image: '',
+                name: "Sharon Cumaru",
+                contact: '@sharoncumaru'
+            },
+            {
+                image: '',
+                name: "Clandestina Cervejaria",
+                contact: '@clandestinacervejariaartesanal'
+            },
+            {
+                image: '',
+                name: "Andrezza Piccoli",
+                contact: '@andreza_piccoli'
             },
         ]
     },
@@ -41,9 +61,14 @@ export const popUpData = {
         activity: "Live Painting",
         attractions: [
             {
-                image: acasatereIcon,
-                name: "A Casa Terê",
-                contact: '@sadas'
+                image: '',
+                name: "Isa Carneiro",
+                contact: '@isacarneiro.7'
+            },
+            {
+                image: '',
+                name: "Isa Duarte",
+                contact: '@e.a.a.r.e.a'
             },
         ]
     },
@@ -51,9 +76,9 @@ export const popUpData = {
         activity: "Tatuagem",
         attractions: [
             {
-                image: acasatereIcon,
-                name: "A Casa Terê",
-                contact: '@sadas'
+                image: '',
+                name: "Sabrina Freitas",
+                contact: '@saho.ink'
             },
         ]
     },
@@ -61,9 +86,19 @@ export const popUpData = {
         activity: "Atrações",
         attractions: [
             {
-                image: acasatereIcon,
-                name: "A Casa Terê",
-                contact: '@sadas'
+                image: '',
+                name: "Lab Delaxx",
+                contact: '@labdelaxx'
+            },
+            {
+                image: '',
+                name: "Acordes",
+                contact: '@acordes.br'
+            },
+            {
+                image: '',
+                name: "Iris Fortuna",
+                contact: '@fortunairis'
             },
         ]
     }, 

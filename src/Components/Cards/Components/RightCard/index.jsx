@@ -1,5 +1,8 @@
 import copo from "../../../../Assets/Images/copo.svg"
+import brinde from "../../../../Assets/Images/brinde.svg"
+
 import { useState } from "react"
+
 import Modal from "../Modal"
 
 import { popUpData } from '../../../../Services/popUp'
@@ -11,9 +14,9 @@ import {
     Image,
     Content,
     Title,
-    TitleSmaller,
     GrayContainer,
     Button,
+    MinorImage
 } from "./style"
 
 const RightCard = () => {
@@ -33,7 +36,7 @@ const RightCard = () => {
             </FirstImageContainer>
             <Content>
                 <Title>ATIVIDADES &</Title>
-                <TitleSmaller>ATRAÇÕES</TitleSmaller>
+                <Title>ATRAÇÕES</Title>
                 <GrayContainer>
                     <Button onClick={() => openModal(popUpData.cervejeiras)}>CERVEJEIRAS &</Button>
                     <Button onClick={() => openModal(popUpData.palestras)}>PALESTRAS &</Button>
@@ -43,6 +46,7 @@ const RightCard = () => {
 
                     <Modal data={modalData} status={statusModal} setStatus={setStatusModal}/>
                 </GrayContainer>
+                <MinorImage src={brinde} alt="Ícone de Evento"/>
             </Content>
         </LastContainer>
     )

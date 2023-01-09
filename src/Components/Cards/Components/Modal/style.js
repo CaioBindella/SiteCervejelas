@@ -33,7 +33,7 @@ export const Close = styled.button`
     width: 40px;
     height: 40px;
     margin-right: 20px;
-    border-radius: 50px;
+    border-radius: 20px;
     color: var(--brown);
     background-color: var(--light-brown);
     &:hover{
@@ -82,8 +82,11 @@ export const Attraction = styled.div`
 export const Image = styled.img`
     width: 15vw;
 
-    @media screen and (max-width: ${width.largeMobile}) {    
+    @media screen and (max-width: ${width.mobile}) {    
         width: 40vw;
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
+        width: 30vw;
     }
 `;
 
@@ -91,4 +94,5 @@ export const Contact = styled.div`
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: var(--small);
     color: #000;
+    margin: 20px;
 `;

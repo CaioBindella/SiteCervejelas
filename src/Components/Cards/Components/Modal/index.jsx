@@ -36,7 +36,11 @@ const Modal = ({status, setStatus, data}) =>{
                         {data.attractions.map((eachData, key) => {
                             return(
                                 <Attraction>
-                                    <Image key={key} src={eachData.image} alt={eachData.name} />
+                                    {eachData.image ?
+                                        <Image key={key} src={eachData.image} alt={eachData.name} />
+                                        :
+                                        null
+                                    }
                                     <Contact>{eachData.contact}</Contact>
                                 </Attraction>
                             )

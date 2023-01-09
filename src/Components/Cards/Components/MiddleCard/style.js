@@ -23,7 +23,7 @@ export const Container = styled.div`
         margin-top: 10%;
     }
     @media screen and (min-width: ${width.notebook}) and (max-width: ${width.desktop}) {    
-        width: 25%;
+        width: 27%;
         height: 20%;
     }
 `;
@@ -66,8 +66,16 @@ export const Title = styled.p`
     @media screen and (max-width: ${width.mobile}) {    
         font-size: var(--large);
     }
-    @media screen and (min-width: ${width.largeMobile}) {    
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {   
         font-size: var(--large);
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        font-size: var(--large);
+        margin-top: 0px;
+    }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {    
+        font-size: var(--large);
+        margin-top: 0px;
     }
 `;
 

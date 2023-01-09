@@ -61,6 +61,9 @@ export const LowHeader = styled.div`
     @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
         flex-direction: row;
     }
+    @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {    
+        margin-left: 7%;
+    }
 
 `;
 

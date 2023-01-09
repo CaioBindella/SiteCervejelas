@@ -10,7 +10,7 @@ import {
 const Footer = () => {
     return(
         <Container>
-            <MarcaSerra>SERRA JR. ENGENHERIA &copy;</MarcaSerra>
+            <MarcaSerra>&copy; SERRA JR. ENGENHERIA 2023</MarcaSerra>
             <FooterSlider />
         </Container>
     )
