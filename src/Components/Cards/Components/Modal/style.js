@@ -95,4 +95,14 @@ export const Contact = styled.div`
     font-size: var(--small);
     color: #000;
     margin: 20px;
+
+    @media screen and (max-width: ${width.mobile}) {    
+        font-size: var(--extra-small);
+    }
+    @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) {    
+        font-size: var(--extra-small);
+    }
+    @media screen and (min-width: ${width.tablet}) and (max-width: ${width.notebook}) {    
+        font-size: var(--extra-small);
+    }
 `;
