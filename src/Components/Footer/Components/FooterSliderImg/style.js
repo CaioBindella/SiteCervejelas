@@ -9,7 +9,7 @@ export const Slide = styled.div`
 `;
 
 export const SlideImg = styled.img`
-    width: 150px;
+    width: 120px;
 	margin: 0 20px;
 	transition: 0.5s;
 	overflow: hidden;

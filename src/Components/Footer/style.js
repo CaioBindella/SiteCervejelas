@@ -28,21 +28,26 @@ export const Container = styled.div`
     
 `;
 
-export const MarcaSerra = styled.div`
-    background-color: rgb(137, 90, 149);
-    color: white;
+export const MarcaSerra = styled.button`
+    background-color: var(--purple);
+    color: var(--white);
     border-radius: 10px;
     padding: 0.2%;
-    width: 27vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    width: 25vw;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    margin-bottom: 20px;
+    margin-top: 40px;
     font-family: "Oswald";
     font-size: 45%;
-    border: 1px solid white;
-    
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--white);
+        /* border: 2px solid var(--purple); */
+        color: var(--purple);
+        transition: 0.2s;
+    }
 
     @media screen and (max-width: ${width.mobile}) {    
         width: 70vw;
@@ -50,7 +55,7 @@ export const MarcaSerra = styled.div`
     }
 
     @media screen and (min-width: ${width.largeMobile}) and (max-width: ${width.tablet}) { 
-        width: 65vw;
+        width: 40vw;
         font-size: 1rem;
     }
     
@@ -60,7 +65,7 @@ export const MarcaSerra = styled.div`
     }
 
     @media screen and (min-width: ${width.notebook}) and (max-width: ${width.largeNotebook}) {    
-        width: 45vw;
+        width: 30vw;
         font-size: 1.5rem; 
         
     }

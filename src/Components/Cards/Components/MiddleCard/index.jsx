@@ -19,7 +19,7 @@ const MiddleCard = () => {
                     <Title>NOSSOS</Title>
                     <Title>OBJETIVOS</Title>
                     
-                    <Text>Promever e valorizar a cultura cervejeitra realizada por mulheres da Região Serrana do Estado do Rio de Janeiro, ampliando a percepção do público sobre o consumo e produção da bebida independente do gênero.</Text>
+                    <Text>Promover e valorizar a cultura cervejeira realizada por mulheres da Região Serrana do Estado do Rio de Janeiro, ampliando a percepção do público sobre o consumo e produção da bebida independente do gênero.</Text>
                 </Content>
         </Container>
     )

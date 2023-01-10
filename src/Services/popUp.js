@@ -30,6 +30,11 @@ export const popUpData = {
                 name: "Marceli Fonseca",
                 contact: '@marcelifonseca'
             },
+            {
+                image: '',
+                name: "Carol Pinheiro",
+                contact: '@carolcontabil'
+            }, 
         ]
     },
     cervejeiras:{
@@ -102,4 +107,49 @@ export const popUpData = {
             },
         ]
     }, 
+    desenvolvedores:{
+        activity: "Desenvolvedores",
+        attractions: [
+            {
+                image: '',
+                name: "Caio Bindella",
+                contact: '@b.caiioo'
+            },
+            {
+                image: '',
+                name: "Victor Luis",
+                contact: '@victor_luis22'
+            },
+            {
+                image: '',
+                name: "Kauan Peçanha",
+                contact: '@kauan.pecanha'
+            },
+            {
+                image: '',
+                name: "Carolina Dornelas",
+                contact: '@cdornellas'
+            },
+            {
+                image: '',
+                name: "Davidson Oliveira",
+                contact: '@arievilo_davidson'
+            },
+            {
+                image: '',
+                name: "Gustavo Curty",
+                contact: '@gust_curty'
+            },
+            {
+                image: '',
+                name: "André ",
+                contact: '@andreb308'
+            },
+            {
+                image: '',
+                name: "Vinicius Monnerat",
+                contact: '@viniciusmonn'
+            },
+        ]
+    },
 }
