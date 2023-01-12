@@ -9,6 +9,7 @@ export const Container = styled.div`
     margin: 20px;
     margin-top: 5%;
     height: 20%;
+    
 
     @media screen and (max-width: ${width.mobile}) {    
         width: 80vw;

@@ -41,7 +41,6 @@ function FooterSlider() {
                     <FooterSliderImg image={cpContabilidadeIcon} altText="CP Contabilidade" />
                     <FooterSliderImg image={fermenIcon} altText="Fermen" />
                     <FooterSliderImg image={ninkasiIcon} altText="Ninkasi" />
-                    <FooterSliderImg image={favrebraumIcon} altText="Favrebraum" />
 
                     <FooterSliderImg image={acasatereIcon} altText="Acasatere" />
                     <FooterSliderImg image={beerGardenIcon} altText="BeerGarden" />
@@ -58,7 +57,6 @@ function FooterSlider() {
                     <FooterSliderImg image={cpContabilidadeIcon} altText="CP Contabilidade" />
                     <FooterSliderImg image={fermenIcon} altText="Fermen" />
                     <FooterSliderImg image={ninkasiIcon} altText="Ninkasi" />
-                    <FooterSliderImg image={favrebraumIcon} altText="Favrebraum" />
                     
                 </LogoSliderTrack>
             </LogoSlider>

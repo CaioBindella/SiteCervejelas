@@ -36,7 +36,7 @@ const Carousel = () => {
                     return (
                         <Container key={key}>
                             <Wrapper>
-                                <Title>História</Title>
+                                <Title>História da Cerveja</Title>
                                 <Content>
                                     <Circle>{item.circle}</Circle>
                                     <DivRow>

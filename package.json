@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@djpfs/react-vlibras": "^2.0.2",
     "gh-pages": "^4.0.0",
     "jquery": "^3.6.3",
     "node-modules": "^1.0.1",
@@ -22,7 +23,8 @@
     "react-modal": "^3.16.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
